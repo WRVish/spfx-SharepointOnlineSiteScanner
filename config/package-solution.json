@@ -1,0 +1,46 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+    "solution": {
+        "name": "Sharepoint-Online-Site-Scanner-client-side-solution",
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "version": "1.0.0.0",
+        "includeClientSideAssets": true,
+        "skipFeatureDeployment": true,
+        "isDomainIsolated": false,
+        "webApiPermissionRequests": [
+            { "resource": "Microsoft Graph", "scope": "User.Read.All" },
+            { "resource": "Microsoft Graph", "scope": "Group.Read.All" },
+            { "resource": "Microsoft Graph", "scope": "Sites.Read.All" },
+            { "resource": "Microsoft Graph", "scope": "AuditLog.Read.All" }
+        ],
+        "developer": {
+            "name": "",
+            "websiteUrl": "",
+            "privacyUrl": "",
+            "termsOfUseUrl": "",
+            "mpnId": "Undefined-1.20.0"
+        },
+        "metadata": {
+            "shortDescription": {
+                "default": "Review external sharing and permission risk signals for the current SharePoint Online site."
+            },
+            "longDescription": {
+                "default": "A read-only governance tool that helps site owners and admins understand basic external sharing and permission risk signals from the current SharePoint site."
+            },
+            "screenshotPaths": [],
+            "videoUrl": "",
+            "categories": []
+        },
+        "features": [
+            {
+                "title": "Sharepoint-Online-Site-Scanner",
+                "description": "Deploys the External Sharing Risk Scanner web part.",
+                "id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+                "version": "1.0.0.0"
+            }
+        ]
+    },
+    "paths": {
+        "zippedPackage": "solution/Sharepoint-Online-Site-Scanner.sppkg"
+    }
+}

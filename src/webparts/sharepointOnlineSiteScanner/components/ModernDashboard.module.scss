@@ -1,0 +1,193 @@
+.modernRoot {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 24px;
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    border-radius: 16px;
+    color: #1f2937;
+}
+
+.topHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    
+    h1 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 600;
+        color: #111827;
+        background: linear-gradient(90deg, #2563eb, #7c3aed);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.actionButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    
+    &:hover {
+        background: #f9fafb;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        transform: translateY(-1px);
+    }
+}
+
+.primaryButton {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    border: none;
+    
+    &:hover {
+        background: linear-gradient(135deg, #1d4ed8, #1e40af);
+        color: white;
+    }
+}
+
+.bentoGrid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.bentoCard {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02), 0 10px 15px rgba(0,0,0,0.03);
+    transition: transform 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+
+.riskCard {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.summaryCard {
+    grid-column: span 8;
+}
+
+.metricCard {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.metricValue {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 8px 0;
+    color: #111827;
+}
+
+.metricLabel {
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.gaugeContainer {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 16px;
+}
+
+.gaugeRing {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 50%;
+    background: conic-gradient(#ef4444 0deg, #e5e7eb 0deg);
+    transition: background 1s ease-out;
+}
+
+.gaugeInner {
+    position: absolute;
+    top: 15px; left: 15px; right: 15px; bottom: 15px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gaugeScore {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.riskLabel {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.dataTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    
+    th, td {
+        padding: 12px 8px;
+        text-align: left;
+        border-bottom: 1px solid #f3f4f6;
+    }
+    
+    th {
+        font-weight: 600;
+        color: #4b5563;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+    
+    tr:last-child td {
+        border-bottom: none;
+    }
+}
+
+.pill {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.pillDanger {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+.pillWarning {
+    background: #fef3c7;
+    color: #b45309;
+}
+.pillSuccess {
+    background: #d1fae5;
+    color: #047857;
+}

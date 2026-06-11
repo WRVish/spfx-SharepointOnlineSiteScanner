@@ -1,0 +1,104 @@
+.compactRoot {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 16px;
+    background: #fdfdfd;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+.topRow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.compactCard {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.compactCardInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.compactLabel {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #6b7280;
+    font-weight: 600;
+}
+
+.compactValue {
+    font-size: 28px;
+    font-weight: bold;
+    color: #111827;
+    line-height: 1.2;
+}
+
+.middleRow {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.middlePanel {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.bottomRow {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.sectionTitle {
+    margin: 0 0 16px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #374151;
+    border-bottom: 1px solid #f3f4f6;
+    padding-bottom: 8px;
+}
+
+.dataTable {
+    width: 100%;
+    border-collapse: collapse;
+    
+    th, td {
+        padding: 8px 12px;
+        text-align: left;
+        border-bottom: 1px solid #f3f4f6;
+        font-size: 13px;
+    }
+    
+    th {
+        font-weight: 600;
+        color: #6b7280;
+    }
+}
+
+.pill {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 600;
+}
+.pillDanger { background: #fee2e2; color: #b91c1c; }
+.pillWarning { background: #fef3c7; color: #b45309; }
+.pillSuccess { background: #d1fae5; color: #047857; }
