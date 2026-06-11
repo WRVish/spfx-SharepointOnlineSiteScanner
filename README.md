@@ -5,14 +5,14 @@
 ![Microsoft 365](https://img.shields.io/badge/Microsoft%20365-Governance-blue)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
-An open-source SharePoint Framework web part for reviewing external sharing, SharePoint group membership, permission inheritance, Copilot readiness, and governance risk indicators in SharePoint Online.
-
-This project is designed to help SharePoint site owners, Microsoft 365 admins, consultants, and developers quickly surface common permission and external sharing risks directly from a SharePoint site—**without needing global Graph API consent.**
-
 > [!TIP]
 > **Love this project?** Please consider giving it a ⭐ **Star** and **Forking** it on GitHub! 
 > If you have ideas, feature requests, or want to collaborate, drop a message in the **GitHub Discussions** tab.
 
+
+An open-source SharePoint Framework web part for reviewing external sharing, SharePoint group membership, permission inheritance, Copilot readiness, and governance risk indicators in SharePoint Online.
+
+This project is designed to help SharePoint site owners, Microsoft 365 admins, consultants, and developers quickly surface common permission and external sharing risks directly from a SharePoint site—**without needing global Graph API consent.**
 
 
 ---
