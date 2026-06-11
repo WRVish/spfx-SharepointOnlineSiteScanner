@@ -185,4 +185,4 @@ Created by Vishnu.
 I build practical SharePoint, Microsoft 365, and SPFx solutions focused on governance, permissions, migrations, intranet solutions, automation, and real enterprise problems.
 
 Portfolio: https://www.wrvishnu.com
-Contact: https://www.wrvishnu.com/contact
+
